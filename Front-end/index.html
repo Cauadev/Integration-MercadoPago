@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+    <!-- SDK Client-Side Mercado Pago -->
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+    <title>Pagamento</title>
+
+
+</head>
+<body>
+
+        <form action="http://localhost:8081/process" method="POST">
+            <script
+            src="https://www.mercadopago.com.br/integrations/v1/web-tokenize-checkout.js"
+            data-public-key="ACCESS_TOKEN_ENV"
+            data-transaction-amount="30.00">
+            </script>
+        </form>
+
+        <img src="https://imgmp.mlstatic.com/org-img/MLB/MP/BANNERS/tipo2_735X40.jpg?v=1"
+        alt="Mercado Pago - Meios de pagamento" title="Mercado Pago - Meios de pagamento"
+        width="735" height="40"/>
+
+
+</body>
+</html>
